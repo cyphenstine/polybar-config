@@ -10,8 +10,6 @@ polybar-msg cmd quit
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 polybar xworkspaces 2>&1 | tee -a /tmp/polybar1.log & disown
 polybar datentime 2>&1 | tee -a /tmp/polybar3.log & disown
-polybar cpu 2>&1 | tee -a /tmp/polybar6.log & disown
-polybar memory 2>&1 | tee -a /tmp/polybar7.log & disown
 polybar battery 2>&1 | tee -a /tmp/polybar5.log & disown
 polybar network 2>&1 | tee -a /tmp/polybar9.log & disown
 echo "Bars launched..."
